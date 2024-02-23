@@ -1,0 +1,264 @@
+head {
+    font-weight: bold;
+}
+
+body {
+    /* border: solid purple; */
+    margin: 0;
+    padding: 0;
+    font-family: "Gilmer-Bold", sans-serif;
+}
+
+#header {
+    border: 1px solid blue;
+    width: 100%;
+    height: 90%;
+    background-image: url("Imagens_Guia/ponte_header.jpg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gilmer-Bold", sans-serif;
+    position: relative;
+}
+
+#logo {
+    /* border: solid red; */
+    width: fit-content;
+    margin: 30px 100px 140px;
+
+}
+
+#header-titulo {
+    /* border: thin solid red; */
+    width: fit-content;
+    color: fff;
+    font-size: 6rem;
+    text-shadow: 0px 0px 3px black;
+    margin: 0px 100px 0px;
+
+
+
+}
+
+#header-subtitulo {
+    /* border: thin solid red; */
+    width: fit-content;
+    color: fff;
+    font-size: 2rem;
+    margin: 10px 100px 50px;
+    text-shadow: 0px 0px 3px black;
+
+
+}
+
+.menu {
+    /* border: solid red; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    text-align: center;
+}
+
+.menu-item {
+    /* border: thin solid orange; */
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: 0px 0px 3px black;
+    display: inline;
+    margin-left: 5px;
+
+}
+
+.menu-item:hover {
+    color: orange;
+}
+
+.content {
+    /* border: solid red; */
+    margin: 0px 100px 50px;
+    font-family: "Gilmer-Bold", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    /* border: solid red; */
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+#links {
+    /* border: solid blue; */
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+.link {
+    /* border: solid orange; */
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    color: black;
+
+
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.link img {
+    width: 400px;
+    height: 450px;
+}
+
+.link-imagem {
+    /* border: solid red; */
+
+    margin-bottom: 20px;
+}
+
+.link-title {
+    /* border: solid purple; */
+    height: fit-content;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.link-sub {
+    /* border: solid pink; */
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#links2 {
+    /* border: solid blue; */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-around;
+}
+
+#links2 img {
+    width: 240px;
+    height: 270px;
+}
+
+.mini-links{
+    border: solid black;
+    padding: 0px;
+    width: 240px;
+    
+}
+
+.mini-links:hover{
+    border: solid orange;
+    cursor: pointer;
+}
+
+/* CSS PAGINAS */
+
+/* HEADER PAGINAS */
+
+.header-paginas {
+    border: 1px solid blue;
+    background-color: #267CE9;
+    height: 25vh;
+    margin: 0;
+    position: relative;
+}
+
+.logo-paginas {
+    /* border: solid red; */
+    width: fit-content;
+    margin: 30px 100px 30px;
+}
+
+.menu-paginas {
+    /* border: solid red;     */
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    text-align: center;
+
+}
+
+/* BODY PAGINAS */
+
+.praia01,
+.praia02,
+.res01,
+.res02,
+.lugar01,
+.lugar02 {
+    /* border: solid orange; */
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.praia02 h2,
+.res02 h2,
+.lugar02 h2 {
+    text-align: right;
+}
+
+.praia-imagem img,
+.res-imagem img,
+.lugar-imagem img {
+    /* border: solid blue; */
+    width: 600px;
+    height: 400px;
+}
+
+.praia-texto,
+.res-texto,
+.lugar-texto {
+    /* border: solid black; */
+    font-family: "Gilmer-Bold", sans-serif;
+    text-align: justify;
+    width: 500px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #links,
+    #links2,
+    .praia01,
+    .praia02,
+    .res01,
+    .res02,
+    .lugar01,
+    .lugar02 {
+        display: inline-block;
+    }
+
+    .link {
+        margin-bottom: 15px;
+    }
+}
